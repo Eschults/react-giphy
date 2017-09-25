@@ -15,6 +15,8 @@ class App extends Component {
       gifs: [],
       giphyId: 'xT9IgDEI1iZyb2wqo8'
     };
+
+    this.searchGifs('homer thinking');
   }
 
   searchGifs = (term) => {
@@ -31,7 +33,7 @@ class App extends Component {
     return (
       <div>
         <div className="main-scene">
-          <SearchBar handleChange={this.searchGifs} />
+          <SearchBar onQueryChange={this.searchGifs} />
           <div className="main-frame">
             <Gif giphyId={this.state.giphyId} />
           </div>
