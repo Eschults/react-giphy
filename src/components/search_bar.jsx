@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
   handleChange = (event) => {
-    console.log(event.target.value);
-    this.props.handleChange(event.target.value);
+    this.props.onQueryChange(event.target.value);
   }
 
   render() {
