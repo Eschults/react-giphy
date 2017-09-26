@@ -4,7 +4,7 @@ import Gif from './gif';
 const GifList = (props) => {
   const renderList = () => {
     return props.gifs.map((gif) => {
-      return <Gif giphyId={gif.giphyId} />;
+      return <Gif giphyId={gif.giphyId} onListItemClick={props.selectGif} />;
     });
   };
 

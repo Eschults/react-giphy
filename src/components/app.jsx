@@ -29,6 +29,10 @@ class App extends Component {
     });
   }
 
+  selectGif = (giphyId) => {
+    this.setState({ giphyId: giphyId });
+  }
+
   render() {
     return (
       <div>
@@ -39,7 +43,7 @@ class App extends Component {
           </div>
         </div>
         <div className="list-container">
-          <GifList gifs={this.state.gifs} />
+          <GifList gifs={this.state.gifs} selectGif={this.selectGif} />
         </div>
       </div>
     );
