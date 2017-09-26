@@ -24,5 +24,9 @@
     "giphy-api": "^1.2.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "deploy": "gh-pages -d dist"
   }
 }
